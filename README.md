@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-# react_jianshu
-react简书demo练习
-=======
-<<<<<<< HEAD
-# react_jianshu
-react简书demo练习
-=======
-<<<<<<< HEAD
-# react_jianshu
-react简书demo练习
-=======
-<<<<<<< HEAD
-# react_jianshu
-react简书demo练习
-=======
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
