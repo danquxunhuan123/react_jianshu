@@ -14,6 +14,7 @@ export const Logo = styled.img.attrs(() => ({
 `
 
 export const HeaderMiddleWrapper = styled.div`
+    display:inline-block;
     height:100%;
     width: 945px;
     margin:0px auto;
@@ -26,8 +27,8 @@ export const SearchHistory = styled.div`
     border:1px solid #eee;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     width: 250px;
-    height: 170px;
     border-radius:20px;
+    padding:10px;
 `
 
 
@@ -78,6 +79,42 @@ export const SouSuo = styled.input.attrs({
     padding:0px 40px 0px 20px;
     margin:10px 0 10px 20px;
 `
+
+export const Img = styled.img.attrs({
+    src:'//upload.jianshu.io/users/upload_avatars/8492960/dfaa03b1-9c44-439a-8b8b-4b455aacc83d?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120'
+})`
+    margin:9px 15px;
+    width:40px;
+    height:40px;
+    float:right;
+`
+
+export const Button = styled.button`
+    width:100px;
+    background:#ea6f5a;
+    border:1px solid #fff;
+    font-size:15px;
+    color:#fff;
+    margin:9px 15px;
+    border-radius:20px;
+    height:38px;
+    float:right;
+`
+
+export const Ul = styled.ul`
+    list-style-image: url(${'../icon/clock.png'})
+`
+
+export const Li = styled.li`
+    font-size: 18px;
+    color: #787878;
+    border-radius: 4px;
+    padding:10px;
+    &:hover {
+            background: #f0f0f0;
+        }
+`
+
 
 
 export const GlobalStyle = createGlobalStyle`

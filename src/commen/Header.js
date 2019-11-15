@@ -1,7 +1,10 @@
 import React from 'react';
-import {Logo, HeaderWrapper, HeaderMiddleWrapper, SpanBg, SearchHistory, Aa, SouSuo, Beta} from './styles'
+import {Logo, HeaderWrapper, HeaderMiddleWrapper,
+    Ul,Li,Img,SpanBg,Button, SearchHistory, Aa, SouSuo, Beta} from './styles'
 import {connect} from 'react-redux';
-import {changeFocusShow, changeColor} from '../redux/actionCreater'
+import {changeFocusShow} from '../redux/actionCreater'
+
+const his = ['aaa','bbb','ccc','ddd','eee'];
 
 class Header extends React.Component {
     constructor(props) {
@@ -49,10 +52,18 @@ class Header extends React.Component {
                     <Aa>Aa</Aa>
 
                     {
-                        this.props.isShowHis ? <SearchHistory/> : null
+                        this.props.isShowHis ? <SearchHistory>
+                            <Ul>
+                                {
+                                    his.map((item,index) => (<Li key={index}>{item}</Li>))
+                                }
+                            </Ul>
+                        </SearchHistory> : null
                     }
 
                 </HeaderMiddleWrapper>
+                <Button>写文章</Button>
+                <Img />
             </HeaderWrapper>
         )
     }
