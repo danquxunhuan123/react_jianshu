@@ -1,69 +1,82 @@
 import styled, {createGlobalStyle} from 'styled-components'
 
 export const HeaderWrapper = styled.div`
-    position: relative;
-    height: 56px;
+    height: 58px;
     border-bottom:1px solid #f0f0f0;
-`
-export const HeaderMiddleWrapper = styled.div`
-    width: 945px;
-    line-height:56px;
-    height: 100%;
-    margin: 0px auto;
 `
 
 export const Logo = styled.img.attrs(() => ({
-    src: "//cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"}))`
-    height: 100%;
+    src: "//cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
+}))`
     float:left;
+    height: 100%;
     width:100px;
 `
 
+export const HeaderMiddleWrapper = styled.div`
+    height:100%;
+    width: 945px;
+    margin:0px auto;
+`
+
+export const SearchHistory = styled.div`
+    position:relative;
+    top:0px;
+    left:210px;
+    border:1px solid #eee;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    width: 250px;
+    height: 170px;
+    border-radius:20px;
+`
+
+
 export const Beta = styled.img.attrs(() => ({
-    src: "//cdn2.jianshu.io/assets/web/nav_jsds_beta-eeb44d165b8ba37680fdb7e65ae17ae4.png"}))`
+    src: "//cdn2.jianshu.io/assets/web/nav_jsds_beta-eeb44d165b8ba37680fdb7e65ae17ae4.png"
+}))`
+    margin-top:16px;
+    margin-left:20px;
     height: 25px;
     width:57px;
-    margin:15.5px 0px 15.5px 20px;
     float:right;
 `
 
 export const Aa = styled.i`
-        font-size:inherit;
-        font-family:iconfont!important;
-        font-weight:400!important;
-    float:right;    
+    float:right;   
+    height:100%;
+    font-size:18px;
+    line-height:58px;
 `
 
 export const SpanBg = styled.a.attrs({
-    href:'/',
+    href: '/',
 })`
+    float:left;
+        height:100%;
         &:hover {
             background: #eeeeee;
         }
         text-align:center;
-        display:inline-block;
         width:64px;
-        height:58px;
+        line-height:58px;
         text-decoration:none;
         font-size:17px;
-        color:#333333;
-`
-export const Span = styled.span`
-    font-size:17px;
-    color:#333333;
+        color:${props => props.defaultSelect ? 'red' : '#333333'};
 `
 
 export const SouSuo = styled.input.attrs({
-    placeholder:'搜索'
-})`
-    outline:none;
-    padding:0 40px 0 20px;
-    margin-left:20px;
+    placeholder: '搜索',
+    }
+)`
     width:100px;
     height:38px;
+    outline:none;
+    line-height:38px;
     background:#eee;
     border-radius:40px;
-    border:1px solid #eee
+    border:1px solid #eee;
+    padding:0px 40px 0px 20px;
+    margin:10px 0 10px 20px;
 `
 
 

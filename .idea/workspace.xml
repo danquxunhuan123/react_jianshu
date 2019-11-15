@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dac47f8f-8b27-4f3c-a3cd-50df796e2185" name="Default Changelist" comment="" />
+    <list default="true" id="dac47f8f-8b27-4f3c-a3cd-50df796e2185" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/Constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commen/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commen/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commen/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actionCreater.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionCreater.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +33,15 @@
   <component name="ProjectId" id="1TaYBTMTebWNPhy10mlbJSIAKOG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -63,6 +79,9 @@
       <updated>1573699538251</updated>
       <workItem from="1573699546056" duration="17339000" />
       <workItem from="1573719501329" duration="645000" />
+      <workItem from="1573721059566" duration="110000" />
+      <workItem from="1573722971077" duration="2803000" />
+      <workItem from="1573782322351" duration="18543000" />
     </task>
     <task id="LOCAL-00001" summary="commit code">
       <created>1573719681274</created>
@@ -71,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573719681274</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit code">
+      <created>1573721116380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573721116380</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
