@@ -1,23 +1,45 @@
 import React from 'react';
-import {Logo, HeaderWrapper, HeaderMiddleWrapper,
-    Ul,Li,Img,SpanBg,Button, SearchHistory, Aa, SouSuo, Beta} from './styles'
+import {
+    Logo, HeaderWrapper, HeaderMiddleWrapper,
+    Ul, Li, Img, SpanBg, Button, SearchHistory, Aa, SouSuo, Beta
+} from './styles'
 import {connect} from 'react-redux';
-import {changeFocusShow} from '../redux/actionCreater'
+import {changeFocusShow, changeSelect} from '../redux/actionCreater'
 
-const his = ['aaa','bbb','ccc','ddd','eee'];
+const his = ['aaa', 'bbb', 'ccc', 'ddd', 'eee'];
 
 class Header extends React.Component {
     constructor(props) {
         super(props)
 
+        this.faXian = React.createRef();
+        this.guanZhu = React.createRef();
+        this.xiaoXi = React.createRef();
         this.changeFocusState = this.changeFocusState.bind(this);
         this.changeSelectColor = this.changeSelectColor.bind(this);
     }
 
-    changeSelectColor(e) {
-        console.log(e);
-        // const changFocus = changeColor();
-        // this.props.dispatch(changFocus);
+    componentDidMount() {
+        let firstSelect = this.faXian.current;
+        firstSelect.style.background = 'none';
+        firstSelect.style.color = '#ea6f5a';
+        this.props.dispatch(changeSelect(firstSelect));
+    }
+
+    changeSelectColor(selectComponet) {
+        let currentNode = selectComponet.current;
+        let oldNode = this.props.oldSelect;
+        if (currentNode.innerHTML === oldNode.innerHTML) return;
+        currentNode.style.color = '#ea6f5a';
+        currentNode.style.background = 'none';
+        // currentNode.onmouseover(this.changeEvent(currentNode));
+        oldNode.style.color = '#333333';
+        // oldNode.style.background = '#none';
+        // oldNode.onmouseover(() => {
+        //     oldNode.style.background = '#eeeeee';
+        // });
+        this.props.dispatch(changeSelect(currentNode));
+        // console.log(currentNode.attrs);
     }
 
     changeFocusState(isShowHis) {
@@ -31,15 +53,19 @@ class Header extends React.Component {
                 <Logo/>
                 <HeaderMiddleWrapper>
                     <SpanBg
-                        onMouseOver={(e) => this.changeSelectColor(e)}
-                        onClick={(e) => this.changeSelectColor(e)}
+                        ref={this.faXian}
+                        onClick={() => this.changeSelectColor(this.faXian)}
                     >
                         发现
                     </SpanBg>
-                    <SpanBg onClick={() => this.changeSelectColor()}>
+                    <SpanBg
+                        ref={this.guanZhu}
+                        onClick={() => this.changeSelectColor(this.guanZhu)}>
                         关注
                     </SpanBg>
-                    <SpanBg onClick={() => this.changeSelectColor()}>
+                    <SpanBg
+                        ref={this.xiaoXi}
+                        onClick={() => this.changeSelectColor(this.xiaoXi)}>
                         消息
                     </SpanBg>
 
@@ -55,7 +81,7 @@ class Header extends React.Component {
                         this.props.isShowHis ? <SearchHistory>
                             <Ul>
                                 {
-                                    his.map((item,index) => (<Li key={index}>{item}</Li>))
+                                    his.map((item, index) => (<Li key={index}>{item}</Li>))
                                 }
                             </Ul>
                         </SearchHistory> : null
@@ -63,7 +89,7 @@ class Header extends React.Component {
 
                 </HeaderMiddleWrapper>
                 <Button>写文章</Button>
-                <Img />
+                <Img/>
             </HeaderWrapper>
         )
     }
@@ -71,7 +97,7 @@ class Header extends React.Component {
 
 const mapState = (state) => ({
     isShowHis: state.isShowHis,
-    currentSelect: state.currentSelect
+    oldSelect: state.oldSelect
 });
 
 export default connect(mapState)(Header)

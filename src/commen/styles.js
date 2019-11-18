@@ -1,6 +1,7 @@
 import styled, {createGlobalStyle} from 'styled-components'
 
 export const HeaderWrapper = styled.div`
+    position:relative;
     height: 58px;
     border-bottom:1px solid #f0f0f0;
 `
@@ -14,7 +15,6 @@ export const Logo = styled.img.attrs(() => ({
 `
 
 export const HeaderMiddleWrapper = styled.div`
-    display:inline-block;
     height:100%;
     width: 945px;
     margin:0px auto;
@@ -50,7 +50,7 @@ export const Aa = styled.i`
 `
 
 export const SpanBg = styled.a.attrs({
-    href: '/',
+    // href: '/',
 })`
     float:left;
         height:100%;
@@ -62,7 +62,6 @@ export const SpanBg = styled.a.attrs({
         line-height:58px;
         text-decoration:none;
         font-size:17px;
-        color:${props => props.defaultSelect ? 'red' : '#333333'};
 `
 
 export const SouSuo = styled.input.attrs({
@@ -86,7 +85,9 @@ export const Img = styled.img.attrs({
     margin:9px 15px;
     width:40px;
     height:40px;
-    float:right;
+    position:absolute;
+    top:0px;
+    right:130px;
 `
 
 export const Button = styled.button`
@@ -98,7 +99,10 @@ export const Button = styled.button`
     margin:9px 15px;
     border-radius:20px;
     height:38px;
-    float:right;
+    outline:none;
+    position:absolute;
+    top:0px;
+    right:0px;
 `
 
 export const Ul = styled.ul`

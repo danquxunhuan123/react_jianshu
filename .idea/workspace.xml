@@ -5,6 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commen/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commen/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commen/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/Constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actionCreater.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionCreater.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +77,8 @@
       <workItem from="1573721059566" duration="110000" />
       <workItem from="1573722971077" duration="2803000" />
       <workItem from="1573782322351" duration="18644000" />
-      <workItem from="1573807773570" duration="4654000" />
+      <workItem from="1573807773570" duration="4944000" />
+      <workItem from="1574042971584" duration="9491000" />
     </task>
     <task id="LOCAL-00001" summary="commit code">
       <created>1573719681274</created>
@@ -97,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573806305931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="历史纪录添加数据">
+      <created>1573812759808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573812759808</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit code" />
     <MESSAGE value="实现Header布局&#10;动态显示搜索记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现Header布局&#10;动态显示搜索记录" />
+    <MESSAGE value="历史纪录添加数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="历史纪录添加数据" />
   </component>
 </project>
