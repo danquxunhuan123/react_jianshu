@@ -49,14 +49,15 @@ export const Aa = styled.i`
     line-height:58px;
 `
 
-export const SpanBg = styled.a.attrs({
+export const AWithBg = styled.a.attrs({
     // href: '/',
 })`
     float:left;
-        height:100%;
-        &:hover {
-            background: #eeeeee;
-        }
+    height:100%;
+    &:hover {
+        background: ${props => props.selBackground ? 'none' : '#eeeeee'}; 
+    }
+        color:${props => props.selColor ? '#ea6f5a' : '#333333'};
         text-align:center;
         width:64px;
         line-height:58px;

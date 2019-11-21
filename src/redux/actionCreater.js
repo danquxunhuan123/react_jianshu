@@ -3,7 +3,7 @@ export const changeFocusShow = (isFocus) => ({
     type:IS_SHOW_HISTORY,
     isFocus
 })
-export const changeSelect = (selectComponent) => ({
+export const changeSelect = (index) => ({
     type:CHANGE_SELECT,
-    selectComponent
+    index
 })

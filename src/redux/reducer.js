@@ -1,7 +1,8 @@
 import {CHANGE_SELECT, IS_SHOW_HISTORY} from './Constants'
 
 const defaultState = {
-    oldSelect: null,
+    oldSelectIndex: 0,
+    isSelect: [true, false, false],
     isShowHis: false,
 }
 
@@ -12,8 +13,13 @@ const reducer = function todos(state = defaultState, action) {
                 isShowHis: action.isFocus,
             });
         case CHANGE_SELECT:
-            return Object.assign({},state,{
-                oldSelect: action.selectComponent,
+            let isSel = state.isSelect.concat();
+            isSel[state.oldSelectIndex] = false;
+            isSel[action.index] = true;
+
+            return Object.assign({}, state, {
+                oldSelectIndex:action.index,
+                isSelect: isSel,
             });
         default:
             return state;
