@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dac47f8f-8b27-4f3c-a3cd-50df796e2185" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/ListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/action/BodyActionCreater.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer/BodyReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducer/Reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store/Store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/BodyStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/GlobalStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/ListItemStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commen/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commen/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commen/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actionCreater.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actionCreater.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commen/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commen/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/HeaderStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actionCreater.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action/HeaderActionCreater.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/HeaderReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +50,15 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react_obj\my-react-app\src\redux\action" />
+      <recent name="E:\react_obj\my-react-app\src\redux\reducer" />
+      <recent name="E:\react_obj\my-react-app\src\redux\store" />
+      <recent name="E:\react_obj\my-react-app\src\style" />
+      <recent name="E:\react_obj\my-react-app\src\style\body" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +100,8 @@
       <workItem from="1573807773570" duration="4944000" />
       <workItem from="1574042971584" duration="9685000" />
       <workItem from="1574241812094" duration="2563000" />
-      <workItem from="1574302026176" duration="12603000" />
+      <workItem from="1574302026176" duration="12742000" />
+      <workItem from="1574386918516" duration="9489000" />
     </task>
     <task id="LOCAL-00001" summary="commit code">
       <created>1573719681274</created>
@@ -116,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574053617650</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="实现组件字体颜色及背景色点击动态改变">
+      <created>1574315494899</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1574315494899</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +169,7 @@
     <MESSAGE value="实现Header布局&#10;动态显示搜索记录" />
     <MESSAGE value="历史纪录添加数据" />
     <MESSAGE value="实现title样式动态点击切换" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现title样式动态点击切换" />
+    <MESSAGE value="实现组件字体颜色及背景色点击动态改变" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现组件字体颜色及背景色点击动态改变" />
   </component>
 </project>

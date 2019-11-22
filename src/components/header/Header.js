@@ -2,9 +2,9 @@ import React from 'react';
 import {
     Logo, HeaderWrapper, HeaderMiddleWrapper,
     Ul, Li, Img, AWithBg, Button, SearchHistory, Aa, SouSuo, Beta
-} from './styles'
+} from '../../style/HeaderStyle'
 import {connect} from 'react-redux';
-import {changeFocusShow, changeSelect} from '../redux/actionCreater'
+import {changeFocusShow, changeSelect} from '../../redux/action/HeaderActionCreater'
 
 const his = ['aaa', 'bbb', 'ccc', 'ddd', 'eee'];
 
@@ -83,9 +83,9 @@ class Header extends React.Component {
 }
 
 const mapState = (state) => ({
-    oldSelectIndex: state.oldSelectIndex,
-    isShowHis: state.isShowHis,
-    isSelect: state.isSelect
+    oldSelectIndex: state.HeaderReducer.oldSelectIndex,
+    isShowHis: state.HeaderReducer.isShowHis,
+    isSelect: state.HeaderReducer.isSelect
 });
 
-export default connect(mapState)(Header)
+export default connect(mapState)(Header);

@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react';
-import Header from "./commen/Header";
-import {GlobalStyle} from './commen/styles';
+import Header from "./components/header/Header";
+import Body from "./components/body/Body";
+import {GlobalStyle} from './style/GlobalStyle';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {Provider} from 'react-redux'
 import PropTypes from 'prop-types'
@@ -11,6 +12,7 @@ function App() {
             <GlobalStyle/>
             <div>
                 <Header/>
+                <Body/>
             </div>
         </Fragment>
     );

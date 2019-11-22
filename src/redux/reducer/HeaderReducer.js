@@ -1,4 +1,4 @@
-import {CHANGE_SELECT, IS_SHOW_HISTORY} from './Constants'
+import {CHANGE_SELECT, IS_SHOW_HISTORY} from '../Constants'
 
 const defaultState = {
     oldSelectIndex: 0,
@@ -6,7 +6,7 @@ const defaultState = {
     isShowHis: false,
 }
 
-const reducer = function todos(state = defaultState, action) {
+export const headerReducer = (state = defaultState, action) => {
     switch (action.type) {
         case IS_SHOW_HISTORY:
             return Object.assign({}, state, {
@@ -26,4 +26,4 @@ const reducer = function todos(state = defaultState, action) {
     }
 }
 
-export default reducer;
+export default headerReducer;
