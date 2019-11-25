@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Logo, HeaderWrapper, HeaderMiddleWrapper,
-    Ul, Li, Img, AWithBg, Button, SearchHistory, Aa, SouSuo, Beta
+    Ul, Li, Img, ImgWraper, AWithBg, Button, SearchHistory, Aa, SouSuo, Beta
 } from '../../style/HeaderStyle'
 import {connect} from 'react-redux';
 import {changeFocusShow, changeSelect} from '../../redux/action/HeaderActionCreater'
@@ -76,7 +76,9 @@ class Header extends React.Component {
 
                 </HeaderMiddleWrapper>
                 <Button>写文章</Button>
-                <Img/>
+                <ImgWraper>
+                    <Img/>
+                </ImgWraper>
             </HeaderWrapper>
         )
     }

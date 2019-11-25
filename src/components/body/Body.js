@@ -2,8 +2,13 @@ import React from 'react';
 import {BodyMiddleWrapper, BodyLeft, BodyRight} from "../../style/BodyStyle";
 import {connect} from 'react-redux';
 import {ListItem} from "./ListItem";
+import {getAsyList} from '../../redux/action/BodyActionCreater';
 
 class Body extends React.Component {
+
+    componentDidMount(){
+        this.props.dispatch(getAsyList);
+    }
 
     render() {
         const list = this.props.bodyList;
@@ -23,7 +28,15 @@ class Body extends React.Component {
     }
 }
 
-const mapState = (state) => ({
+const mapStateToProps = (state) => ({
     bodyList: state.BodyReducer.bodyList
 })
-export default connect(mapState)(Body);
+
+// const mapDispatchToProps = (dispatch) => {
+//     function getListData(){
+//         let listActions = getList(dispatch);
+//         console.log(listActions);
+//         // dispatch(listActions);
+//     }
+// }
+export default connect(mapStateToProps)(Body);

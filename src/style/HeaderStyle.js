@@ -15,6 +15,7 @@ export const Logo = styled.img.attrs(() => ({
 `
 
 export const HeaderMiddleWrapper = styled.div`
+    position:relative;
     height:100%;
     width: 945px;
     margin:0px auto;
@@ -29,14 +30,15 @@ export const SearchHistory = styled.div`
     width: 250px;
     border-radius:20px;
     padding:10px;
+    background:white;
 `
 
 
 export const Beta = styled.img.attrs(() => ({
     src: "//cdn2.jianshu.io/assets/web/nav_jsds_beta-eeb44d165b8ba37680fdb7e65ae17ae4.png"
 }))`
-    margin-top:16px;
-    margin-left:20px;
+    float:right; 
+    margin:16px 25px 0 20px;
     height: 25px;
     width:57px;
     float:right;
@@ -80,15 +82,25 @@ export const SouSuo = styled.input.attrs({
     margin:10px 0 10px 20px;
 `
 
-export const Img = styled.img.attrs({
-    src:'//upload.jianshu.io/users/upload_avatars/8492960/dfaa03b1-9c44-439a-8b8b-4b455aacc83d?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120'
-})`
-    margin:9px 15px;
-    width:40px;
-    height:40px;
+export const ImgWraper = styled.div`
+    &:hover {
+        background:#eee; 
+    }
+    text-align:center;
+    width:80px;
+    height:100%;
     position:absolute;
     top:0px;
     right:130px;
+`
+export const Img = styled.img.attrs({
+    src:'//upload.jianshu.io/users/upload_avatars/8492960/dfaa03b1-9c44-439a-8b8b-4b455aacc83d?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120'
+})`
+    width:40px;
+    height:40px;
+    margin-top:8px;
+    border:1px solid #eee;
+    border-radius:100px;
 `
 
 export const Button = styled.button`
