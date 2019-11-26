@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 export const ItemWraper = styled.div`
     width:100%;
@@ -22,10 +23,12 @@ export const ItemLeftWraper = styled.div`
     float:left;
 `
 
-export const Title = styled.a`
+export const Title = styled(Link)`
+    text-decoration:none;
     color: #2f2f2f;
     font-size: 18px;
     font-weight: 700;
+    line-height:1.5em;
 `
 
 export const Context = styled.p`

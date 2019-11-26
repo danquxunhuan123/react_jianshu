@@ -1,13 +1,24 @@
 import React from 'react';
-import {ItemWraper,ItemLeftWraper,Pic,Title,Context,ItemBottomWraper,Zuan,Author,CommentNum,AgreeNum} from "../../style/ListItemStyle";
+import {
+    ItemWraper,
+    ItemLeftWraper,
+    Pic,
+    Title,
+    Context,
+    ItemBottomWraper,
+    Zuan,
+    Author,
+    CommentNum,
+    AgreeNum
+} from "../../style/ListItemStyle";
 
-export class ListItem extends React.Component{
+export class ListItem extends React.Component {
     render() {
         const item = this.props.item;
         return (
             <ItemWraper>
                 <ItemLeftWraper>
-                    <Title>{item.title}</Title>
+                    <Title to="/detail">{item.title}</Title>
                     <Context>{item.content}</Context>
                     <ItemBottomWraper>
                         <Zuan>{item.zuanNum}</Zuan>

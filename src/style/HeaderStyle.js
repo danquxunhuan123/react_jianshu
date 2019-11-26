@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from "react-router-dom";
 
 export const HeaderWrapper = styled.div`
     position:relative;
@@ -51,15 +52,13 @@ export const Aa = styled.i`
     line-height:58px;
 `
 
-export const AWithBg = styled.a.attrs({
-    // href: '/',
-})`
+export const AWithBg = styled(Link)`
     float:left;
     height:100%;
     &:hover {
-        background: ${props => props.selBackground ? 'none' : '#eeeeee'}; 
+        background: ${props => props.selbackground === 'true' ? 'none' : '#eeeeee'}; 
     }
-        color:${props => props.selColor ? '#ea6f5a' : '#333333'};
+        color:${props => props.selcolor === 'true' ? '#ea6f5a' : '#333333'};
         text-align:center;
         width:64px;
         line-height:58px;

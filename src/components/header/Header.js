@@ -17,7 +17,7 @@ class Header extends React.Component {
 
     }
 
-    changeSelectColor(index){
+    changeSelectColor(index) {
         if (index === this.props.oldSelectIndex) return;
         this.props.dispatch(changeSelect(index));
     }
@@ -33,29 +33,29 @@ class Header extends React.Component {
             <HeaderWrapper>
                 <Logo/>
                 <HeaderMiddleWrapper>
-                    <AWithBg
-                        onClick={() => this.changeSelectColor(0)}
-                        selBackground={select[0]}
-                        selColor={select[0]}
-                    >
-                        发现
-                    </AWithBg>
-                    <AWithBg
-                        onClick={() => this.changeSelectColor(1)}
-                        selBackground={select[1]}
-                        selColor={select[1]}
-                    >
-
-                        关注
-                    </AWithBg>
-                    <AWithBg
-                        onClick={() => this.changeSelectColor(2)}
-                        selBackground={select[2]}
-                        selColor={select[2]}
-                    >
-                        消息
-                    </AWithBg>
-
+                        <AWithBg
+                            onClick={() => this.changeSelectColor(0)}
+                            selbackground={select[0].toString()}
+                            selcolor={select[0].toString()}
+                            to="/find"
+                        >
+                            发现</AWithBg>
+                        <AWithBg
+                            onClick={() => this.changeSelectColor(1)}
+                            selbackground={select[1].toString()}
+                            selcolor={select[1].toString()}
+                            to="/focus"
+                        >
+                            关注
+                        </AWithBg>
+                        <AWithBg
+                            onClick={() => this.changeSelectColor(2)}
+                            selbackground={select[2].toString()}
+                            selcolor={select[2].toString()}
+                            to="/news"
+                        >
+                            消息
+                        </AWithBg>
                     <SouSuo
                         onFocus={() => this.changeFocusState(true)}
                         onBlur={() => this.changeFocusState(false)}

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dac47f8f-8b27-4f3c-a3cd-50df796e2185" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/detail/Detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/DetailStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/ListItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/Constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/action/BodyActionCreater.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/action/BodyActionCreater.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducer/BodyReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducer/BodyReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/Store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/HeaderStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/HeaderStyle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/ListItemStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/ListItemStyle.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +95,8 @@
       <workItem from="1574241812094" duration="2563000" />
       <workItem from="1574302026176" duration="12742000" />
       <workItem from="1574386918516" duration="9868000" />
-      <workItem from="1574647657057" duration="7322000" />
+      <workItem from="1574647657057" duration="7428000" />
+      <workItem from="1574733023258" duration="15739000" />
     </task>
     <task id="LOCAL-00001" summary="commit code">
       <created>1573719681274</created>
@@ -144,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574396703545</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="利用redux-thunk中间件进行action异步请求，展示首页列表">
+      <created>1574655076256</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574655076256</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +180,7 @@
     <MESSAGE value="实现title样式动态点击切换" />
     <MESSAGE value="实现组件字体颜色及背景色点击动态改变" />
     <MESSAGE value="创建页面列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建页面列表" />
+    <MESSAGE value="利用redux-thunk中间件进行action异步请求，展示首页列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="利用redux-thunk中间件进行action异步请求，展示首页列表" />
   </component>
 </project>
