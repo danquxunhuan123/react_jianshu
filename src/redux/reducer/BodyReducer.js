@@ -7,8 +7,11 @@ const defaultState = {
 const BodyReducer = (state = defaultState, action) => {
     switch (action.type) {
         case LIST_DATA:
+            let list = state.bodyList.concat();
+            list = [];
+            let concatList = list.concat(action.bodyList);
             return Object.assign({}, state, {
-                bodyList: state.bodyList.concat(action.bodyList)
+                bodyList: concatList
             });
         default:
             return state;

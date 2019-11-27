@@ -6,9 +6,18 @@ import {getAsyList} from '../../redux/action/BodyActionCreater';
 
 class Body extends React.Component {
 
-    componentDidMount(){
+    componentDidMount() {
         this.props.dispatch(getAsyList);
     }
+
+    // shouldComponentUpdate(nextProps, nextState, nextContext) {
+    //     if (this.props.bodyList === nextProps.bodyList){
+    //         console.log("false")
+    //         return false;
+    //     }
+    //     console.log("true")
+    //     return true;
+    // }
 
     render() {
         const list = this.props.bodyList;

@@ -12,24 +12,22 @@ import {
     AgreeNum
 } from "../../style/ListItemStyle";
 
-export class ListItem extends React.Component {
-    render() {
-        const item = this.props.item;
-        return (
-            <ItemWraper>
-                <ItemLeftWraper>
-                    <Title to="/detail">{item.title}</Title>
-                    <Context>{item.content}</Context>
-                    <ItemBottomWraper>
-                        <Zuan>{item.zuanNum}</Zuan>
-                        <Author>{item.author}</Author>
-                        <CommentNum>{item.commentNum}</CommentNum>
-                        <AgreeNum>{item.agreeNum}</AgreeNum>
-                    </ItemBottomWraper>
-                </ItemLeftWraper>
+export function ListItem(props) {
+    let item = props.item;
+    return (
+        <ItemWraper>
+            <ItemLeftWraper>
+                <Title to={`/detail/${item.id}`}>{item.title}</Title>
+                <Context>{item.content}</Context>
+                <ItemBottomWraper>
+                    <Zuan>{item.zuanNum}</Zuan>
+                    <Author>{item.author}</Author>
+                    <CommentNum>{item.commentNum}</CommentNum>
+                    <AgreeNum>{item.agreeNum}</AgreeNum>
+                </ItemBottomWraper>
+            </ItemLeftWraper>
 
-                <Pic src={item.pic}/>
-            </ItemWraper>
-        );
-    }
+            <Pic src={item.pic}/>
+        </ItemWraper>
+    )
 }

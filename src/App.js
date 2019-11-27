@@ -29,7 +29,7 @@ const Root = ({store}) => (
                     <Route path="/find">
                         <Body/>
                     </Route>
-                    <Route path="/detail">
+                    <Route path="/detail/:id">
                         <Detail/>
                     </Route>
                     <Route path="/focus">
