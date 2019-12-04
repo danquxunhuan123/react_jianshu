@@ -1,4 +1,14 @@
 {
+  "bannerList": [
+    {
+      "id": 1,
+      "pic": "//upload.jianshu.io/admin_banners/web_images/4815/f472c99bab23664f1bd73eaefcdd6b3931526077.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+    },
+    {
+      "id": 2,
+      "pic":"//upload.jianshu.io/admin_banners/web_images/4809/134b6040870ec886549946a290fd3eba23b312b1.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540"
+    }
+  ],
   "bodyList": [
     {
       "id": 1,

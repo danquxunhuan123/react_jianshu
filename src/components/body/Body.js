@@ -1,30 +1,36 @@
 import React from 'react';
-import {BodyMiddleWrapper, BodyLeft, BodyRight} from "../../style/BodyStyle";
+import {BodyMiddleWrapper, BodyLeft, Banner, AWithBanner, ImgBanner, BodyRight} from "../../style/BodyStyle";
 import {connect} from 'react-redux';
+import 'antd/dist/antd.css';
 import {ListItem} from "./ListItem";
 import {getAsyList} from '../../redux/action/BodyActionCreater';
 
 class Body extends React.Component {
 
-    componentDidMount() {
+    constructor(props) {
+        super(props);
+
         this.props.dispatch(getAsyList);
     }
 
-    // shouldComponentUpdate(nextProps, nextState, nextContext) {
-    //     if (this.props.bodyList === nextProps.bodyList){
-    //         console.log("false")
-    //         return false;
-    //     }
-    //     console.log("true")
-    //     return true;
-    // }
-
     render() {
-        const list = this.props.bodyList;
+        let bodyList = this.props.bodyList;
+        let bannerList = this.props.bannerList;
+        // const {bodyList, bannerList} = this.props;
         return (
             <BodyMiddleWrapper>
                 <BodyLeft>
-                    {list.map((item, index) =>
+                    <Banner autoplay>
+                        {
+                            bannerList.map((item, index) => (
+                                <AWithBanner key={index}>
+                                    <ImgBanner img={item.pic}/>
+                                </AWithBanner>
+                            ))
+                        }
+                    </Banner>
+
+                    {bodyList.map((item, index) =>
                         (
                             <ListItem key={index} item={item}/>
                         )
@@ -38,7 +44,8 @@ class Body extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    bodyList: state.BodyReducer.bodyList
+    bodyList: state.BodyReducer.bodyList,
+    bannerList: state.BodyReducer.bannerList
 })
 
 // const mapDispatchToProps = (dispatch) => {

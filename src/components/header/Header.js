@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-    Logo, HeaderWrapper, HeaderMiddleWrapper,
-    Ul, Li, Img, ImgWraper, AWithBg, Button, SearchHistory, Aa, SouSuo, Beta
+    Logo, HeaderMiddleWrapper,
+    Ul, Li, Img, ImgWraper, AWithBg, Button, SearchHistory, Aa, SouSuo, Beta, HeaderFixedWraper
 } from '../../style/HeaderStyle'
 import {connect} from 'react-redux';
 import {changeFocusShow, changeSelect} from '../../redux/action/HeaderActionCreater'
@@ -30,32 +30,32 @@ class Header extends React.Component {
     render() {
         let select = this.props.isSelect;
         return (
-            <HeaderWrapper>
+            <HeaderFixedWraper>
                 <Logo/>
                 <HeaderMiddleWrapper>
-                        <AWithBg
-                            onClick={() => this.changeSelectColor(0)}
-                            selbackground={select[0].toString()}
-                            selcolor={select[0].toString()}
-                            to="/find"
-                        >
-                            发现</AWithBg>
-                        <AWithBg
-                            onClick={() => this.changeSelectColor(1)}
-                            selbackground={select[1].toString()}
-                            selcolor={select[1].toString()}
-                            to="/focus"
-                        >
-                            关注
-                        </AWithBg>
-                        <AWithBg
-                            onClick={() => this.changeSelectColor(2)}
-                            selbackground={select[2].toString()}
-                            selcolor={select[2].toString()}
-                            to="/news"
-                        >
-                            消息
-                        </AWithBg>
+                    <AWithBg
+                        onClick={() => this.changeSelectColor(0)}
+                        selbackground={select[0].toString()}
+                        selcolor={select[0].toString()}
+                        to="/find"
+                    >
+                        发现</AWithBg>
+                    <AWithBg
+                        onClick={() => this.changeSelectColor(1)}
+                        selbackground={select[1].toString()}
+                        selcolor={select[1].toString()}
+                        to="/focus"
+                    >
+                        关注
+                    </AWithBg>
+                    <AWithBg
+                        onClick={() => this.changeSelectColor(2)}
+                        selbackground={select[2].toString()}
+                        selcolor={select[2].toString()}
+                        to="/news"
+                    >
+                        消息
+                    </AWithBg>
                     <SouSuo
                         onFocus={() => this.changeFocusState(true)}
                         onBlur={() => this.changeFocusState(false)}
@@ -79,7 +79,7 @@ class Header extends React.Component {
                 <ImgWraper>
                     <Img/>
                 </ImgWraper>
-            </HeaderWrapper>
+            </HeaderFixedWraper>
         )
     }
 }

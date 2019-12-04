@@ -1,17 +1,18 @@
 import {LIST_DATA} from '../Constants';
 
 const defaultState = {
+    bannerList:[],
     bodyList: []
 }
 
 const BodyReducer = (state = defaultState, action) => {
     switch (action.type) {
         case LIST_DATA:
-            let list = state.bodyList.concat();
-            list = [];
-            let concatList = list.concat(action.bodyList);
+            let listBanner = state.bannerList.concat(action.bannerList);
+            let listBody = state.bodyList.concat(action.bodyList);
             return Object.assign({}, state, {
-                bodyList: concatList
+                bannerList: listBanner,
+                bodyList: listBody
             });
         default:
             return state;
