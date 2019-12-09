@@ -1,5 +1,6 @@
 import React from 'react';
-import {BodyMiddleWrapper, BodyLeft, Banner, AWithBanner, ImgBanner, BodyRight} from "../../style/BodyStyle";
+import {BodyMiddleWrapper, BodyLeft, Ul, Li, LiRightTop,Banner, AWithBanner, ImgBanner, ImgRight,
+    BodyRight} from "../../style/BodyStyle";
 import {connect} from 'react-redux';
 import 'antd/dist/antd.css';
 import {ListItem} from "./ListItem";
@@ -16,6 +17,7 @@ class Body extends React.Component {
     render() {
         let bodyList = this.props.bodyList;
         let bannerList = this.props.bannerList;
+        let bodyRight = this.props.bodyRight;
         // const {bodyList, bannerList} = this.props;
         return (
             <BodyMiddleWrapper>
@@ -23,20 +25,35 @@ class Body extends React.Component {
                     <Banner autoplay>
                         {
                             bannerList.map((item, index) => (
-                                <AWithBanner key={index}>
+                                <AWithBanner key={index} to="/focus">
                                     <ImgBanner img={item.pic}/>
                                 </AWithBanner>
                             ))
                         }
                     </Banner>
 
-                    {bodyList.map((item, index) =>
-                        (
-                            <ListItem key={index} item={item}/>
-                        )
-                    )}
+                    <Ul>
+                        {bodyList.map((item, index) =>
+                            (
+                                <Li key={index}>
+                                    <ListItem item={item}/>
+                                </Li>
+                            )
+                        )}
+                    </Ul>
                 </BodyLeft>
                 <BodyRight>
+                    <Ul>
+                        {bodyRight.map((item, index) =>
+                            (
+                                <LiRightTop key={index}>
+                                    <AWithBanner to="/focus">
+                                        <ImgRight img={item.pic}/>
+                                    </AWithBanner>
+                                </LiRightTop>
+                            )
+                        )}
+                    </Ul>
                 </BodyRight>
             </BodyMiddleWrapper>
         );
@@ -45,7 +62,8 @@ class Body extends React.Component {
 
 const mapStateToProps = (state) => ({
     bodyList: state.BodyReducer.bodyList,
-    bannerList: state.BodyReducer.bannerList
+    bannerList: state.BodyReducer.bannerList,
+    bodyRight: state.BodyReducer.bodyRight
 })
 
 // const mapDispatchToProps = (dispatch) => {

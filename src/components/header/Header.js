@@ -39,7 +39,8 @@ class Header extends React.Component {
                         selcolor={select[0].toString()}
                         to="/find"
                     >
-                        发现</AWithBg>
+                        发现
+                    </AWithBg>
                     <AWithBg
                         onClick={() => this.changeSelectColor(1)}
                         selbackground={select[1].toString()}

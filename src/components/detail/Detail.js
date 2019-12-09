@@ -3,7 +3,7 @@ import {DetailWraper, H1} from "../../style/DetailStyle";
 import {useParams} from 'react-router-dom';
 
 function Detail() {
-    let { id } = useParams();
+    let {id} = useParams();
     return (
         <DetailWraper>
             <H1>{id}</H1>

@@ -13,6 +13,7 @@ export const HeaderFixedWraper = styled.div`
     left:0px;
     background:white;
     border-bottom:1px solid #f0f0f0;
+    z-index:1;
 `
 /******************头部left*******************/
 export const Logo = styled.img.attrs(() => ({
@@ -36,6 +37,7 @@ export const AWithBg = styled(Link)`
     height:100%;
     &:hover {
         background: ${props => props.selbackground === 'true' ? 'none' : '#eeeeee'}; 
+        color:${props => props.selcolor === 'true' ? '#ea6f5a' : '#333333'};
     }
         color:${props => props.selcolor === 'true' ? '#ea6f5a' : '#333333'};
         text-align:center;
@@ -49,7 +51,7 @@ export const SouSuo = styled.input.attrs({
         placeholder: '搜索',
     }
 )`
-    width:100px;
+    width:160px;
     height:38px;
     outline:none;
     line-height:38px;
@@ -77,7 +79,7 @@ export const Aa = styled.i`
     line-height:58px;
 `
 /******************头部right*******************/
-export const ImgWraper = styled.div`
+export const ImgWraper = styled.a`
     &:hover {
         background:#eee; 
     }
@@ -97,20 +99,26 @@ export const Img = styled.img.attrs({
 `
 
 export const Button = styled.a`
+    &:hover {
+        color:#fff;
+    }
     &::before{
+        position:relative;
+        top:4px;
+        margin-right:2px;
+        display:inline-block;
         content:url(${pan});
-        margin:15px 0;
     }
     width:100px;
+    height:42px;
     background:#ea6f5a;
     border:1px solid #fff;
     font-size:15px;
     color:#fff;
-    margin:9px 15px;
+    margin:7px 15px;
     text-align:center;
     border-radius:20px;
-    height:38px;
-    line-height:2.5;
+    line-height:36px;
     outline:none;
     float:right;
 `
@@ -121,25 +129,31 @@ export const SearchHistory = styled.div`
     top:0px;
     left:210px;
     border:1px solid #eee;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
     width: 250px;
-    border-radius:20px;
-    padding:10px;
+    border-radius:4px;
+    padding:5px;
     background:white;
 `
 
 export const Ul = styled.ul`
-    list-style-image: url(${clock})
 `
 
 export const Li = styled.li`
     font-size: 18px;
-    height:20px;
+    height:40px;
+    width:240px;
     color: #787878;
     border-radius: 4px;
     line-height:40px;
-    padding:10px;
     &:hover {
             background: #f0f0f0;
         }
+    &::before{
+        position:relative;
+        top:4px;
+        margin:0px 10px;
+        display:inline-block;
+        content:url(${clock});
+    }
 `
